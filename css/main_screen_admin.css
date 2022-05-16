@@ -1,0 +1,91 @@
+/* --------------ADMIN----------------- */
+
+
+h2 {
+    font-size: 24px;
+    margin-top: 59px;
+    margin-left: 32px;
+    margin-bottom: 24px;
+}
+
+.sortirovka {
+    font-size: 14px;
+    margin-left: 32px;
+}
+
+.sor {
+    margin-bottom: 19px;
+}
+
+.table_sort {
+    font-size: 16px;
+}
+
+.main {
+    background-color: #EEEEEE;
+    height: 100vh;
+}
+
+.box_11 {
+    margin-top: 25px !important;
+}
+
+.box_12 {
+    width: 280px;
+    margin-left: 45px;
+    margin-top: 25px
+}
+
+.box_17 {
+    margin-left: 45px;
+    margin-top: 25px
+}
+
+li {
+    background: #D4D4D4;
+}
+
+.scroll {
+    overflow: scroll;
+    height: 600px;
+}
+
+::-webkit-scrollbar { 
+    width: 6px;
+    height: 4px;
+    background-color: whitesmoke;
+  }
+
+::-webkit-scrollbar-thumb { /* 5 - ползунок */
+    border-radius: 2px;
+    width: 6px;
+    background-color: darkgrey;
+  }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+/* Content  */
+
+.admin_sort {
+    margin-top: 40px;
+}
+
+.sortirovka .btn {
+    margin-right: 10px;
+}
+
+.sortirovka .btn.selected {
+    background-color: unset;
+    color: #000;
+}
+
+table tbody tr {
+    display: none;
+}
+
+table tbody tr.selected {
+    display: table-row;
+}

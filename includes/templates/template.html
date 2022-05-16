@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Справочник | Главная</title>
+    <link rel="stylesheet" href="css/template-style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+    <div class="app">
+
+        <!-- Боковое меню сайта -->
+        <aside class="sidebar">
+            <div class="logo">
+                <a href=""><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <div class="list">
+                <nav class="nav">
+                    <h2 class="title">Операционные системы</h2>
+                    <ul class="menu">
+                        <li>
+                            <a href="#" class="topic1-btn">Тема 1: "Основы опер. систем"</a>
+                            <ul class="submenu topic1">
+                                <li><a href="#">Лекция 1: "Название лекции"</a></li>
+                                <li><a href="#">Лекция 2: "Название лекции"</a></li>
+                                <li><a href="#">Лекция 3: "Название лекции"</a></li>
+                                <li><a href="#">Лекция 4: "Название лекции"</a></li>
+                                <li><a href="#">Лекция 5: "Название лекции"</a></li>
+                                <li><a href="#">Лекция 6: "Название лекции"</a></li>
+                                <li><a href="#">Лекция 7: "Название лекции"</a></li>
+                                <a href="#"><button type="button" class="btn">Итоговый тест</button></a>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="topic2-btn">Тема 2: "Опер. система UNIX"</a>
+                            <ul class="submenu topic2">
+                                <li><a href="#">Лекция 1: "Название лекции"</a></li>
+                                <li><a href="#">Лекция 2: "Название лекции"</a></li>
+                                <li><a href="#">Лекция 3: "Название лекции"</a></li>
+                                <li><a href="#">Лекция 4: "Название лекции"</a></li>
+                                <li><a href="#">Лекция 5: "Название лекции"</a></li>
+                                <li><a href="#">Лекция 6: "Название лекции"</a></li>
+                                <li><a href="#">Лекция 7: "Название лекции"</a></li>
+                                <a href="#"><button type="button" class="btn">Итоговый тест</button></a>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="topic3-btn">Тема 3: "Опер. система Linux"</a>
+                            <ul class="submenu topic3">
+                                <li><a href="#">Лекция 1: "Название лекции"</a></li>
+                                <li><a href="#">Лекция 2: "Название лекции"</a></li>
+                                <li><a href="#">Лекция 3: "Название лекции"</a></li>
+                                <li><a href="#">Лекция 4: "Название лекции"</a></li>
+                                <li><a href="#">Лекция 5: "Название лекции"</a></li>
+                                <li><a href="#">Лекция 6: "Название лекции"</a></li>
+                                <li><a href="#">Лекция 7: "Название лекции"</a></li>
+                                <a href="#"><button type="button" class="btn">Итоговый тест</button></a>
+                            </ul>
+                        </li>
+                        <li><a href="#">Тема 4: "Организация UNIX-систем и..."</a></li>
+                        <li><a href="#">Тема 5: "Администрирование ОС Solaris 9"</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Меню админ-панели -->
+            <!-- <div class="admin-list">
+                В отдельной странице админ-панели изменить название класса тега nav на nav
+                <nav class="admin">
+                    <ul>
+                        <li class="selected"><a href="#">Данные об успеваемости</a></li>
+                        <li><a href="#">Редактирование</a></li>
+                        <li><a href="#">Прочее</a></li>
+                        <li><a href="#">Прочее</a></li>
+                        <li><a href="#">Прочее</a></li>
+                    </ul>
+                </nav>
+            </div> -->
+
+            <div class="aside-footer">
+                <a href="№"><button type="button" class="btn">Вернуться на сайт</button></a>
+
+                <div>Разработано студентами ВМТ</div>
+                <div><span>Милиньковым Никитой</span> и <span>Аннюком Алексеем</span></div>
+                <div>2021</div>
+            </div>
+        </aside>
+
+        <div class="menu-button">
+            <div class="open">
+                <div class="btn-bar"></div>
+                <div class="btn-bar"></div>
+                <div class="btn-bar"></div>
+            </div>
+            <div class="close">
+                <div class="btn-bar first"></div>
+                <div class="btn-bar second"></div>
+            </div>
+        </div>
+
+        <main class="main">
+            <a href="login.php"><button type="button" class="btn login">Войти</button></a>
+            <!-- <a href="#"><button type="button" class="btn user"></button></a> -->
+
+
+            <!-- Весь основной контент сайта вставлять сюда -->
+
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>Имя Фамилия</th>
+                        <th>Группа</th>
+                        <th class="progress-osn-arh">Прогресс Осн. Арх.</th>
+                        <th class="progress-os">Прогресс ОС</th>
+                    </tr>
+                </thead>
+                    <tbody>
+                        <tr>
+                            <td>Имя Фамилия</td>
+                            <td>П-21</td>
+                            <td class="progress-cell">
+                                <div class="progress">
+                                    <div class="bar osn-arh"></div>
+                                    <span class="percent">49%</span>
+                                </div>
+                                
+                            </td>
+                            <td class="progress-cell">
+                                <div class="progress">
+                                    <div class="bar os"></div>
+                                    <span class="percent">20%</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Имя Фамилия</td>
+                            <td>П-21</td>
+                            <td class="progress-cell">
+                                <div class="progress">
+                                    <div class="bar osn-arh"></div>
+                                    <span class="percent">49%</span>
+                                </div>
+                                
+                            </td>
+                            <td class="progress-cell">
+                                <div class="progress">
+                                    <div class="bar os"></div>
+                                    <span class="percent">20%</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Имя Фамилия</td>
+                            <td>П-21</td>
+                            <td class="progress-cell">
+                                <div class="progress">
+                                    <div class="bar osn-arh"></div>
+                                    <span class="percent">49%</span>
+                                </div>
+                                
+                            </td>
+                            <td class="progress-cell">
+                                <div class="progress">
+                                    <div class="bar os"></div>
+                                    <span class="percent">20%</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+            </table>
+
+            <div class="quest">
+                <h3>*Вопрос по лекции*?</h3>
+                <div class="answers">
+                    <div class="answer-box">
+                        <label for="answ1">Вариант ответа №1</label>
+                        <input type="radio" name="answer1" id="answ1">
+                    </div>
+                    <div class="answer-box">
+                        <label for="answ1">Вариант ответа №2</label>
+                        <input type="radio" name="answer1" id="answ2">
+                    </div>
+                    <div class="answer-box">
+                        <label for="answ1">Вариант ответа №3</label>
+                        <input type="radio" name="answer1" id="answ3">
+                    </div>
+                    <div class="answer-box">
+                        <label for="answ1">Вариант ответа №4</label>
+                        <input type="radio" name="answer1" id="answ4">
+                    </div>
+                </div>
+                
+                <input class="submit" type="submit" value="Подтвердить">
+            </div>
+            
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

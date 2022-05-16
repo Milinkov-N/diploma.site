@@ -1,0 +1,315 @@
+/* --------------ADMIN----------------- */
+
+html {
+    background-color: #EEEEEE;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.sort {
+    font-size: 14px;
+    margin-left: 32px;
+}
+
+.scroll {
+    overflow: scroll;
+    height: 600px;
+}
+
+::-webkit-scrollbar { 
+    width: 6px;
+    height: 4px;
+    background-color: whitesmoke;
+  }
+
+::-webkit-scrollbar-thumb { /* 5 - ползунок */
+    border-radius: 2px;
+    width: 6px;
+    background-color: darkgrey;
+}
+
+.sort .btn {
+    margin-right: 10px;
+}
+
+.sort .btn.selected {
+    background-color: unset;
+    color: #000;
+}
+
+table tbody tr {
+    display: none;
+}
+
+table tbody tr.selected {
+    display: table-row;
+}
+
+.wrapper {
+    margin-top: 59px;
+    margin-left: 32px;
+}
+
+.wrapper h2 {
+    margin-bottom: 10px;
+}
+
+ul {
+    display: inline-block;
+    list-style: none;
+}
+
+.folder-list {
+    margin-bottom: 60px;
+}
+
+.folder-list img {
+    margin-right: 13px;
+}
+
+.folder-list .folder {
+    margin-top: 11px;
+}
+
+.folder .content {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.file-list {
+    margin-left: 23px;
+    display: none;
+}
+
+.file-list.active {
+    display: inline-block;
+}
+
+.file {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 11px;
+}
+
+.folder-img {
+    width: 28px;
+}
+
+.file-img {
+    width: 20px;
+}
+
+.file .content {
+    font-weight: 400;
+}
+
+.file .content:hover .button-group {
+    left: 100%;
+    opacity: 100%;
+    z-index: unset;
+}
+
+.button-group {
+    position: absolute;
+    top: 20%;
+    left: 205%;
+    width: 158px;
+    height: 68px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.07);
+    background-color: #fff;
+    opacity: 0;
+    transition: .3s ease all;
+    z-index: -999;
+}
+
+.button-group hr {
+    width: 146px;
+    margin: 0 auto;
+    opacity: 14%;
+}
+
+.button-group .button {
+    padding: 8px;
+}
+
+.button-group .button a {
+    color: #000;
+    font-weight: 300;
+    font-style: unset;
+    cursor: pointer;
+}
+
+#lection_delete input[type="submit"] {
+    background-color: unset;
+    border: none;
+    color: #FF1A1A;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.lection-preview {
+    position: relative;
+    padding-top: 1px;
+}
+
+.preview-header {
+    display: flex;
+    align-items: center;
+}
+
+.preview-header h2 {
+    margin: unset;
+}
+
+.preview-header a {
+    margin-left: 15px;
+}
+
+.preview-header a .btn {
+    margin: unset;
+}
+
+
+/*---------- TABLE OF ADMIN PANEL ----------*/
+
+.admin-table {
+    width: 94%;
+    text-align: left;
+    margin-top: 37px;
+    border-collapse:separate; 
+    border-spacing: 0 17px;
+    box-sizing: border-box;
+}
+
+.admin-table thead th {
+    font-size: 16px;
+    font-weight: 400;
+    color: #949494;
+}
+
+.admin-table thead tr th.progress-osn-arh {
+    min-width: 130px;
+    max-width: 477px;
+}
+
+.admin-table thead tr th.progress-os {
+    min-width: 130px;
+    max-width: 477px;
+}
+
+.admin-table thead tr th:first-child {
+    padding-left: 22px; 
+}
+
+.admin-table tbody tr {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.13);
+    border-radius: 8px;
+    height: 59px;
+}
+
+.admin-table tbody tr td {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.admin-table tbody tr td:first-child {
+    padding-left: 22px;
+    padding-right: 40px;
+    border-radius: 8px 0 0 8px;
+}
+
+.admin-table tbody tr td:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+.admin-table tbody tr td:nth-child(2) {
+    padding-right: 40px;
+}
+
+.admin-table tbody tr td.progress-cell {
+    width: 477px;
+    padding-right: 22px;
+}
+
+.progress {
+    display: flex;
+    align-items: center;
+}
+
+.bar {
+    position: relative;
+    width: 100%;
+    height: 8px;
+    border-radius: 20px;
+    background-color: #D4D4D4;
+    margin-right: 8px;
+}
+
+.bar.osn-arh div {
+    position: absolute;
+    height: inherit;
+    /* width: 49%; */
+    background-color: #FCB63E;
+    border-radius: inherit;
+}
+
+.bar.os div {
+    position: absolute;
+    height: inherit;
+    /* width: 20%; */
+    background-color: #587CF5;
+    border-radius: inherit;
+}
+
+
+
+/*---------- ADMIN NAVIGATION ----------*/
+
+.admin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin ul {
+    position: relative;
+    margin: 0;
+}
+
+.admin ul li {
+    display: flex;
+    align-items: center;
+    width: 268px;
+    height: 46px;
+    border-radius: 23px;
+    background-color: #EEEEEE;
+}
+
+.admin ul li a {
+    width: 268px;
+    padding: 14px 0 14px 34px;
+    color: var(--sidebar-blue);
+}
+
+.admin ul li.selected {
+    position: relative;
+    left: 41px;
+    border-radius: 23px 0 0 23px;
+}
+
+.admin ul li.selected a {
+    font-weight: 600;
+}

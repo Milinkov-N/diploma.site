@@ -1,0 +1,102 @@
+.wrapper {
+    margin-top: 49px;
+    margin-left: 51px;
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: unset;
+}
+
+.accent-line {
+    background-color: #587CF5;
+    width: 164px;
+    height: 4px;
+    border-radius: 20px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 29px;
+}
+
+.select {
+    margin-top: 20px;
+    margin-bottom: 26px;
+}
+
+.quest {
+    position: relative;
+    width: 256px;
+    margin-top: 17px;
+}
+
+.quest h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    margin-left: 20px;
+    padding-top: 25px;
+}
+
+.quest .answers {
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+.quest .answers .answer-box {
+    width: max-content;
+    -moz-width: max-content;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--accent-blue);
+    margin-bottom: 10px;
+    color: white;
+}
+
+.quest .answers .answer-box input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    /* margin-left: 16px; */
+    border: 2px solid var(--accent-yellow);
+    transition: 0.2s all linear;
+    outline: none;
+    cursor: pointer;
+}
+
+.quest .answers .answer-box input:checked { background-color: var(--accent-yellow); }
+
+.quest .answers .answer-box label {
+    margin-left: 10px;
+}
+
+.quest .submit {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25px;
+    width: 179px;
+    height: 36px;
+    border: 2px solid var(--accent-yellow);
+    border-radius: 50px;
+    background-color: unset;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+}
+
+.quest .submit:hover { background-color: var(--accent-yellow); }
+

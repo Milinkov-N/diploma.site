@@ -1,0 +1,498 @@
+@font-face {
+    font-family: 'Gotham Pro Regular';
+    src: url('GothamPro.eot');
+    src: url('GothamPro.eot?#iefix') format('embedded-opentype'),
+    url('GothamPro.woff') format('woff'),
+    url('GothamPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+* {
+    margin: 0%;
+    padding: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+/* Sidebar */
+
+.left_panel {
+    background-color: black;
+    height: 100vh;
+}
+
+/* Content  */
+
+.right_panel {
+    background-color: whitesmoke;
+    margin-left: 350px;
+    width: 1500px;
+}
+
+.theme_left_panel {
+    color: white;
+}
+
+.polosa {
+    background-color: steelblue;
+    width: 200px;
+    height: 5px;
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin-top: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+}
+
+.kontent {
+    margin-left: 50px;
+}
+
+.opis {
+    width: 95%;
+}
+
+.dostupnie_temi {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 97%;
+    grid-gap: 30px;
+}
+
+.tema {
+    border-radius: 15px;
+    border-style: solid;
+    border-color: steelblue;
+}
+
+.text_tema {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.lection {
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.but_itog {
+    margin-bottom: 30px;
+    margin-left: 90px;
+    background-color: none;
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    border-color: orange;
+    font-size: 15px;
+}
+
+.ece {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: orange;
+}
+
+/* ----------------BUTTONS REG-LOG----------------- */
+
+.reg {
+    margin-left: 81%;
+    margin-top: 25px;
+    background-color: none;
+    border-radius: 20px;
+    width: 150px;
+    height: 25px;
+    color: steelblue;
+    border-color: steelblue;
+    font-size: 15px;
+}
+
+.join {
+    background-color: steelblue;
+    width: 100px;
+    height: 25px;
+    border-radius: 20px;
+    border-color: steelblue;
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+
+.join:hover {
+    box-shadow: 0 0 5px rgb(255,165,0, 1);
+    transition: 0.41s;
+}
+
+.reg:hover {
+    box-shadow: 0 0 5px rgb(255,165,0, 1);
+    transition: 0.41s;
+}
+
+/* sidebar  */
+
+:root {
+    --sidebar-width: 351px;
+}
+
+
+/*---------- REPEATABLE ELEMENTS ----------*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+/*---------- APP ----------*/
+
+.app {
+    display: flex;
+    position: relative;
+}
+
+
+/*---------- SIDEBAR ----------*/
+
+.sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: var(--sidebar-width);
+    height: 100vh;
+    background-color: #13245D;
+    color: #fff;
+}
+
+.logo {
+    margin: 0 auto;
+    margin-top: 19px;
+}
+
+.logo img {
+    width: 168px;
+}
+
+.osn-arch {
+    margin-top: 36px;
+    margin-left: 28px;
+}
+
+.oper-sys {
+    margin-top: 36px;
+    margin-left: 28px;
+}
+
+.sidebar .title {
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    margin-left: 26px;
+    padding: 0;
+}
+
+.sidebar li {
+    list-style: none;
+    margin-bottom: 13px;
+    transition: .1s ease-in-out;
+}
+
+.sidebar li a:hover {
+    color: #FCB63E;
+}
+
+.sidebar li a {
+    color: inherit;
+}
+
+.submenu {
+    margin-top: 13px;
+}
+
+.nav .menu ul {
+    display: none;
+}
+  
+nav ul .topic1.show {
+    display: block;
+}
+
+nav ul .topic2.show2 {
+    display: block;
+}
+
+nav ul .topic3.show3 {
+    display: block;
+}
+
+.submenu .btn {
+    position: unset;
+    width: 123px;
+    height: 24px;
+    background: unset;
+    border: 2px solid #FCB63E;
+    font-size: 13px;
+}
+
+.submenu .btn:hover {
+    background: #FCB63E;
+    color: #000;
+}
+
+.aside-footer {
+    width: 280px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 45px;
+    margin-top: 42px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.aside-footer div {
+    margin: 7px 0;
+}
+
+.aside-footer div span {
+    color: #FCB63E;
+}
+
+
+/*---------- MAIN CONTENT ----------*/
+
+.main {
+    position: relative;
+    width: 100%;
+    margin-left: var(--sidebar-width);
+}
+
+.btn {
+    position: absolute;
+    right: 28px;
+    top: 17px;
+    width: 100px;
+    height: 28px;
+    background: #587CF5;
+    border: 2px solid #587CF5;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+.btn.user {
+    width: 75px;
+    height: 75px;
+}
+
+.btn:hover {
+    background: none;
+    color: #000;
+}
+
+.main-content {
+    margin: 0 80px;
+    margin-top: 73px;
+    color: #fff;
+}
+
+.main-content h1 {
+    margin-bottom: 25px;
+    color: #000;
+}
+
+.main-content h1 span {
+    color: #FCB63E;
+}
+
+.main-content .osn-arch {
+    margin-bottom: 66px;
+}
+
+.lections {
+    display: flex;
+}
+
+.first-lection {
+    display: flex;
+    width: 595px;
+    height: 308px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 47px;
+}
+
+.first-lection .lection-title {
+    margin: 205px 0 0 47px;
+}
+
+.first-lection .lection-title h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 21px;
+}
+
+.first-lection .lection-title span {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.other-lections {
+    height: 308px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 7px 0;
+    margin-left: 54px;
+}
+
+/* ----------------THEME SLIDER---------------- */
+
+
+.teams .title::after {
+    content: "кто со мной";
+}
+
+.teams .carousel .card {
+    display: flex;
+    align-items: center;
+    height: 350px;
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all .2s ease-out;
+}
+
+.teams .carousel .card:hover {
+    background: var(--accent);
+}
+
+.teams .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-out;
+}
+
+.teams .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.teams .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.teams .carousel .card p {
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.teams .carousel .card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--accent);
+}
+
+.teams .carousel .card:hover img {
+    border-color: var(--white);
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    width: 13px;
+    height: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid var(--accent) !important;
+    transition: all .2s ease-in;
+}
+
+.owl-dot:hover,
+.owl-dot.active {
+    background: var(--accent) !important;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+/* ---------------media------------------ */
+
+@media (max-width: 1680px) {
+    .right_panel {
+        width: 1330px ;
+    }
+    .reg {
+        margin-left: 78%;
+    }
+    .but_itog {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .right_panel {
+        width: 800px ;
+    }
+    .reg {
+        margin-left: 50%;
+    }
+}
+
+@media (max-width: 680px) {
+    .right_panel {
+        width: 300px ;
+    }
+
+    .left_panel {
+        width: 100px;
+    }
+
+    .reg {
+        margin-left: 50%;
+    }
+}

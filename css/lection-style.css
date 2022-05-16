@@ -1,0 +1,186 @@
+.lection {
+    margin-left: 51px;
+    margin-right: 51px;
+    margin-top: 75px;
+}
+
+.section-name {
+    position: absolute;
+    left: 35px;
+    top: 21px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #A2A2A2;
+}
+
+.lection h1 {
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: unset;
+    margin-bottom: 50px;
+}
+
+.lection p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #3E3E3E;
+    margin-bottom: 23px;
+}
+
+
+.lection h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #3E3E3E;
+    margin-bottom: 23px;
+}
+
+.lection h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #3E3E3E;
+    margin-bottom: 23px;
+}
+
+.lection img {
+    width: 500px;
+    height: 300px;
+    margin-bottom: 13px;
+}
+
+
+
+/* ------------Заметка и иконка------------ */
+
+.note {
+    position: relative;
+    margin-bottom: 23px;
+}
+
+.note .content {
+    position: relative;
+    left: 25px;
+    width: 768px;
+    background-color: #587CF5;
+    padding: 19px 22px;
+    margin: 0;
+}
+
+.note .content p {
+    margin: unset;
+    color: #fff;
+    line-height: 19px;
+}
+
+.note .content p b {
+    font-weight: 700;
+}
+
+.note .icon {
+    position: absolute;
+    top: 7px;
+    padding: 7px;
+    width: 38px;
+    height: 38px;
+    background-color: #FCB63E;
+}
+
+.note .icon img {
+    width: 24px;
+    height: 24px;
+}
+
+
+
+/* -----------------Мини-тест----------------- */
+
+.lection .quest {
+    position: relative;
+    width: 256px;
+    height: 319px;
+    background-color: var(--accent-blue);
+}
+
+.lection .quest h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 20px;
+    padding-top: 25px;
+}
+
+.lection .quest .answers {
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+.lection .quest .answers .answer-box {
+    width: 199px;
+    height: 36px;
+    padding: unset;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.lection .quest .answers .answer-box input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--accent-yellow);
+    transition: .1s all linear;
+    outline: none;
+    cursor: pointer;
+}
+
+.lection .quest .answers .answer-box input:checked { background-color: var(--accent-yellow); }
+
+.lection .quest .answers .answer-box label {
+    margin-left: 16px;
+    margin-right: 20px;
+}
+
+.lection .quest .submit {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25px;
+    width: 179px;
+    height: 36px;
+    border: 2px solid var(--accent-yellow);
+    border-radius: 50px;
+    background-color: unset;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+}
+
+.lection .quest .submit:hover { background-color: var(--accent-yellow); }
+
+@media(max-width: 1300px) {
+    .section-name {
+        left: 51px;
+        top: 45px;
+    }
+}
+
+@media(max-width: 400px) {
+    .section-name {
+        left: 21px;
+        top: 70px;
+    }
+
+    .lection {
+        margin-left: 21px;
+        margin-top: 90px;
+    }
+}

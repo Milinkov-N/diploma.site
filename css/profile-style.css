@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*---------- VARIABLES ----------*/
+
+:root {
+    --sidebar-blue: #13245D; /* цвет бокового меню */
+    --accent-yellow: #FCB63E; /* жёлтый акцентный цвет */
+    --accent-blue: #587CF5; /* голубой акцентный цвет */
+    --grey: #D4D4D4;
+    --green: #00F269;
+    --yellow: #F1E910;
+    --orange: #F87400;
+    --red: #DB0000;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../img/anders-jilden-uwbajDCODj4-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+.content {
+    width: 632px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 4%;
+    margin-bottom: 40px;
+    padding-bottom: 32px;
+}
+
+.return {
+    position: relative;
+    left: 17px;
+    top: 17px;
+    width: 63px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.content .main-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.content .main-info img {
+    width: 94px;
+    filter: invert(100%);
+}
+
+.content .main-info .name {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.content .main-info .group {
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.content .edit-btn {
+    width: 241px;
+    height: 36px;
+    margin-top: 25px;
+    background-color: var(--accent-blue);
+    border: 2px var(--accent-blue) solid;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: unset;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s all ease;
+}
+
+.content .edit-btn:hover {
+    background-color: unset;
+    color: #000;
+}
+
+.content .progress {
+    margin-top: 20px;
+    margin-left: 32px;
+}
+
+.content .progress .info {
+    margin-top: 13px;
+    margin-left: 13px;
+}
+
+.content .progress .info .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .progress .info .total .progress-bar {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 23px;
+}
+
+.content .progress .info .total .bar {
+    width: 164px;
+    height: 5px;
+    border-radius: 30px;
+    background-color: var(--grey);
+}
+
+.content .progress .info .total .bar .oper-sys,
+.content .progress .info .total .bar .osn-arch {
+    height: inherit;
+    border-radius: inherit;
+    background-color: var(--accent-blue);
+}
+
+.content .progress .info .total .bar .osn-arch {
+    background-color: var(--accent-yellow);
+}
+
+.content .progress .info .total .progress-bar .percent {
+    display: inline-block;
+    margin-left: 9px;
+}
+
+.content .progress .info .other-info {
+    /* margin-top: 6px; */
+    margin-left: 6px;
+}
+
+.content .progress .info .other-info span {
+    display: block;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 6px;
+}
+
+.result {
+    width: 39px;
+    height: 19px;
+    background-color: var(--green);
+    font-weight: 800;
+    color: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 175px;
+}
+
+.content .progress .info .tests-results {
+    margin-top: 6px;
+    margin-left: 6px;
+    font-style: italic;
+}
+
+.content .progress .info .tests-results .test {
+    margin-top: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.content .progress .info .average-score {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+
+.result.good {
+    background-color: var(--yellow);
+}
+
+.result.average {
+    background-color: var(--orange);
+}
+
+.result.bad {
+    background-color: var(--red);
+}
+
+.result.uncomplete {
+    width: unset;
+    background-color: unset;
+    font-weight: 400;
+    color: #000;
+}
+
+
+
+/* ----- EDIT PROFILE -----*/
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 65px;
+}
+
+.wrapper form {
+    margin-bottom: 18px;
+}
+
+.wrapper form .input-group {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper form .input-group input,
+.wrapper form .input-group .group {
+    width: 262px;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-left: 8px;
+    padding-bottom: 6px;
+    outline: none;
+    font-weight: 300;
+}
+
+.wrapper form .input-group input::placeholder {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.wrapper form .input-group .edit-btn {
+    width: 97px;
+    height: 22px;
+    font-size: 14px;
+    font-weight: 400;
+    margin: unset;
+    margin-left: 42px;
+}

@@ -1,0 +1,224 @@
+
+* {
+    margin: 0%;
+    padding: 0;
+}
+
+
+/* ----------Кастомный скролл-------- */
+
+::-webkit-scrollbar { 
+    width: 6px;
+    height: 4px;
+    background-color: #13245D;
+  }
+
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    width: 6px;
+    background-color: darkgrey;
+  }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+/* Content  */
+
+.right_panel {
+    background-color: whitesmoke;
+    margin-left: 350px;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.OSN {
+    color: #A2A2A2;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 21px;
+    margin-left: 35px;
+    margin-bottom: 69px;
+}
+
+.Lection_1 {
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: unset;
+    margin-left: 51px;
+    margin-bottom: 50px;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #3E3E3E;
+    margin-left: 51px;
+    margin-bottom: 23px;
+}
+
+
+h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #3E3E3E;
+    margin-left: 51px;
+    margin-bottom: 23px;
+}
+
+h4 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #3E3E3E;
+    margin-left: 51px;
+    margin-bottom: 23px;
+}
+
+.bios_1 {
+    width: 500px;
+    height: 300px;
+    margin-left: 51px;
+    margin-bottom: 13px;
+}
+
+b {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.zam_red b {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.zam_red {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+
+/* ------------Заметка и иконка------------ */
+
+.zam {
+    width: 768px;
+    height: 90px;
+    background-color: #587CF5;
+    z-index: 1;
+    margin-top: -25px;
+    margin-left: 76px;
+    margin-bottom: 23px;
+}
+
+.zam_red {
+    margin-left: 20px;
+    color: white;
+    padding-top: 15px;
+    padding-right: 35px;
+}
+
+.icon {
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 51px;
+    background-color: orange;
+}
+
+.back_icon {
+    width: 25px;
+    height: 25px;
+    z-index: 2;
+}
+
+/* ---------------Основная лекция----------- */
+
+.lection {
+    margin-left: 35px;
+    margin-right: 20px;
+}
+
+/* -----------------Минитест----------------- */
+
+
+.minitest {
+    background-color: royalblue;
+    margin-left: 53px;
+    width: 256px;
+    height: 319px;
+    margin-bottom: 50px;
+}
+
+.vib_otv {
+    padding-left: 20px;
+}
+
+.var_otv {
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 30px;
+    padding-top: 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.round {
+    width: 15px;
+    height: 15px;
+    border-radius: 30px;
+    background: none;
+    border: solid orange;
+    margin-left: 160px;
+    margin-top: -20px;
+}
+
+.round:hover {
+    background-color: palegreen;
+    transition: 1s;
+}
+
+.theme_vorp {
+    margin-bottom: 12px;
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.complete {
+    border-radius: 20px;
+    margin-left: 39px;
+    margin-top: 20px;
+    width: 179px;
+    height: 36px;
+    background: none;
+    border: solid 2px #FCB63E;
+    font-size: 15px;
+    background-color: unset;
+    font-weight: 500;
+    color: white;
+}
+
+.complete:hover {
+    transition: 1s;
+    background-color: #FCB63E;
+    border: solid white;
+}
+
+.other_lection {
+    margin-left: 500px;
+    margin-bottom: 30px;
+    width: 291px;
+    height: 56px;
+    background-color: #FCB63E;
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}

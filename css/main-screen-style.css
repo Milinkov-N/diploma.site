@@ -1,0 +1,109 @@
+/*---------- MAIN CONTENT ----------*/
+
+.content {
+    margin-left: 51px;
+    margin-top: 40px;
+}
+
+.line {
+    background-color: #587CF5;
+    width: 164px;
+    height: 4px;
+    border-radius: 20px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+
+.content p {
+    margin-bottom: 37px;
+}
+
+.content h2 {
+    margin-bottom: 43px;
+}
+
+.content h3 {
+    font-size: 24px;
+    margin-bottom: 52px;
+    font-weight: 600;
+}
+
+.content .card .box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 22px;
+    margin-top: 23px;
+}
+
+.card .box h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 13px;
+}
+
+.card .box p {
+    margin-bottom: 13px;
+    font-weight: 300;
+}
+
+.lections {
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 21px;
+}
+
+li {
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.content .card a {
+    margin: 0 auto;
+}
+
+.content .card .btn {
+    position: unset;
+    top: unset;
+    right: unset;
+    width: 169px;
+    height: 34px;
+    border-radius: 20px;
+    border: solid 2px #FCB63E;
+    margin: 0 auto;
+    margin-top: 37px;
+    font-size: 15px;
+    font-weight: 300;
+    background-color: unset;
+    color: #000;
+}
+
+.card .btn:hover {
+    background-color: #FCB63E;
+    color: #fff;
+}
+
+
+
+/* ----------------THEME SLIDER---------------- */
+
+.teams {
+    max-width: 1300px;
+}
+
+.teams .carousel .card {
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    transition: all .2s ease-out;
+    height: 438px;
+    width: 341px;
+    border-radius: 19px;
+    border: 2px solid #587CF5;
+}
+
+@media(max-width: 400px) {
+    .content {
+        margin-left: 21px;
+        margin-top: 60px;
+    }
+}
